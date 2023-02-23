@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  /*  overflow: hidden; */
+  overflow-x: hidden;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  color: #191d20;
+  background-color: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="password"],
+input[type="button"],
+button,
+textarea {
+  background-color: #f9f9f9;
+  border: 0;
+  box-shadow: 0;
+  font-size: 1.8rem;
+  outline: 0;
+  transition: 0;
+}
+
+a { 
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: white;
+}
+
+.btn {
+  border-radius: 1.2rem;
+  font-size: 1.5rem;
+}
+
+.gradient {
+  background: #ff5a5f;
+  background: -moz-linear-gradient(90deg, rgba(255, 90, 95, 1) 0%, rgba(237, 61, 67, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(255, 90, 95, 1) 0%, rgba(237, 61, 67, 1) 100%);
+  background: linear-gradient(90deg, rgba(255, 90, 95, 1) 0%, rgba(237, 61, 67, 1) 100%);
+  border: 0;
+  color: #ff5a5f;
+  outline: 0;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff5a5f", endColorstr="#ed3d43", GradientType=1);
+}
+
+.primary {
+  background: #ff5a5f;
+  background: -moz-linear-gradient(90deg, rgba(255, 90, 95, 1) 0%, rgba(237, 61, 67, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(255, 90, 95, 1) 0%, rgba(237, 61, 67, 1) 100%);
+  background: linear-gradient(90deg, rgba(255, 90, 95, 1) 0%, rgba(237, 61, 67, 1) 100%);
+  border: 0;
+  color: #FFFFFF;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff5a5f", endColorstr="#ed3d43", GradientType=1);
+  outline: 0;
+}
+
+.primary:hover {
+  background: #f9f9f9;
+  color: #ff5a5f;
+}
+
+.secondary {
+  color: #b0b0b0;
+  font-weight: 600;
+}
+
+.secondary:hover {
+  color: #ff5a5f;
+}
