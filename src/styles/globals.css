@@ -61,6 +61,14 @@ a:hover {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff5a5f", endColorstr="#ed3d43", GradientType=1);
 }
 
+.text-primary-color {
+  color: #ff5a5f;
+}
+
+.text-primary-color:hover {
+  color: #ff5a5f;
+}
+
 .primary {
   background: #ff5a5f;
   background: -moz-linear-gradient(90deg, rgba(255, 90, 95, 1) 0%, rgba(237, 61, 67, 1) 100%);
@@ -84,4 +92,9 @@ a:hover {
 
 .secondary:hover {
   color: #ff5a5f;
+}
+
+.progress {
+  height: 2rem;
+  font-size: 1.6rem;
 }

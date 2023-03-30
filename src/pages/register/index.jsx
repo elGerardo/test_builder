@@ -9,7 +9,7 @@ import { useRouter } from "next/router";
 let Register = () => {
   const router = useRouter();
 
-  let content = (
+  const content = (
     <div
       style={{ height: "75vh" }}
       className="align-items-center d-flex justify-content-center"
@@ -20,7 +20,7 @@ let Register = () => {
           <Link
             href="register?sec=create"
             className={
-              router.query.sec == "create" ? "btn primary" : "btn secondary"
+              router.query.sec == "create" ? "text-center text-primary-color" : "btn secondary"
             }
           >
             Create Account
@@ -28,7 +28,7 @@ let Register = () => {
               <span className="d-block">
                 <FontAwesomeIcon
                   style={{ width: "1rem" }}
-                  className="bg-white rounded-circle text-white"
+                  className="gradient rounded-circle text-primary-color"
                   icon={faCircle}
                 />
               </span>
@@ -37,7 +37,7 @@ let Register = () => {
           <Link
             href="register?sec=login"
             className={
-              router.query.sec != "create" ? "btn primary" : "btn secondary"
+              router.query.sec != "create" ? "text-center text-primary-color" : "btn secondary"
             }
           >
             Login
@@ -45,7 +45,7 @@ let Register = () => {
               <span className="d-block">
                 <FontAwesomeIcon
                   style={{ width: "1rem" }}
-                  className="bg-white rounded-circle text-white"
+                  className="gradient rounded-circle text-primary-color"
                   icon={faCircle}
                 />
               </span>

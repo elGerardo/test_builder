@@ -1,7 +1,15 @@
 import { Button, Form } from "react-bootstrap";
 import { motion } from "framer-motion";
+import { useUser } from "store/user";
 
 let SigninUp = () => {
+  let { user, register } = useUser((state) => state);
+
+  let handleSubmit = async (e) => {
+    e.preventDefault();
+    await register();
+  };
+
   let content = (
     <motion.div
       key="login"
@@ -16,7 +24,7 @@ let SigninUp = () => {
       }}
       exit={{ opacity: 0, x: -25 }}
     >
-      <Form className="w-100">
+      <Form className="w-100" onSubmit={handleSubmit}>
         <Form.Group className="my-4" controlId="username">
           <Form.Label>Username</Form.Label>
           <Form.Control type="text" placeholder="Write your username..." />
